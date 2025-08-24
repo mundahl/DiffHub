@@ -3,8 +3,9 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-  const d = vscode.commands.registerCommand('hello-review.hello', async () => {
-    vscode.window.showInformationMessage('Hello from hello-review!');
+  console.log('hello-diff: activate');
+  const d = vscode.commands.registerCommand('hello-diff.hello', async () => {
+    vscode.window.showInformationMessage('Hello from hello-diff!');
 
     const files = await vscode.workspace.findFiles('**/*', '**/node_modules/**', 100);
     const pick = await vscode.window.showQuickPick(files.map(f=>f.fsPath), {placeHolder:'Pick a file to duplicate'});

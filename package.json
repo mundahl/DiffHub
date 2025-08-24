@@ -1,21 +1,19 @@
 {
   "name": "hello-diff",
-  "displayName": "hello-diff",
-  "description": "Somewhere between hello word and allowing the user to set context from files and create a prompt that ultimately allows the user to review the diff from and external AI model.",
+  "displayName": "Hello Diff",
+  "description": "Between hello world and a user-driven diff review UI that later calls external AI.",
   "version": "0.0.1",
+  "publisher": "mundahlmakes",
   "engines": {
     "vscode": "^1.103.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
   "main": "./out/extension.js",
+  "categories": ["Other"],
   "contributes": {
     "commands": [
       {
-        "command": "hello-diff.helloWorld",
-        "title": "Hello World"
+        "command": "hello-diff.hello",
+        "title": "Hello Diff: Hello"
       }
     ]
   },
